@@ -393,9 +393,9 @@ public class LimboImpl implements Limbo {
         this.limboName = handlerClass.getSimpleName();
       }
 
-      if (Settings.IMP.MAIN.LOGGING_ENABLED) {
-        LimboAPI.getLogger().info(player.getUsername() + " (" + player.getRemoteAddress() + ") has connected to the " + this.limboName + " Limbo");
-      }
+      //if (Settings.IMP.MAIN.LOGGING_ENABLED) {
+      //  LimboAPI.getLogger().info(player.getUsername() + " (" + player.getRemoteAddress() + ") has connected to the " + this.limboName + " Limbo");
+      //}
 
       // With an abnormally large number of connections from the same nickname,
       // requests don't have time to be processed, and an error occurs that "minecraft-encoder" doesn't exist.
